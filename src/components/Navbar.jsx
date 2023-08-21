@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="bg-blue-600">
+    <nav className="bg-gradient-to-r from-cyan-500 to-blue-500">
       <div className="flex justify-between items-center px-4 py-6">
         <h1 className="text-white font-bold">My Medic App</h1>
         <ul className="flex">
