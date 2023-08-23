@@ -1,12 +1,15 @@
-import { Navbar } from "../components/Navbar"
+import { Navbar } from "../components/Navbar";
+import HomeCard from "../components/HomeCard";
 
 const HomePage = () => {
   return (
     <>
-    <Navbar/>
-    <h1 className="text-3xl font-bold underline"> Home Page </h1>
-    </> 
-  )
-}
+      <Navbar />
+      <div className="container mx-auto mt-8">
+        <HomeCard/>
+      </div>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
