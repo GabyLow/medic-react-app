@@ -44,7 +44,7 @@ const CreatePage = () => {
                             {...register("name", {required: true})} 
                             placeholder='Patient Name'
                         />
-                        {errors.name && <span className="text-red-500">Este campo es requerido</span>}
+                        {errors.name && <span className="text-red-500">This field is required</span>}
 
                         <input 
                             className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
@@ -52,6 +52,7 @@ const CreatePage = () => {
                             {...register("age")} 
                             placeholder='Patient Age'
                         />
+                        {errors.name && <span className="text-red-500">This field is required</span>}
 
                         <input 
                             className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
@@ -59,13 +60,15 @@ const CreatePage = () => {
                             {...register("num_afi")} 
                             placeholder='Patient affiliation number' 
                         />
+                        {errors.name && <span className="text-red-500">This field is required</span>}
 
                         <textarea className='shadow appearance-none border rounded m-3 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                             {...register("address")}
                             cols="30" 
                             rows="10"
-                            placeholder='Patient Address'
-                        ></textarea>
+                            placeholder='Patient Address'>
+                            </textarea>
+                            {errors.name && <span className="text-red-500">This field is required</span>}
 
                         <button className='bg-sky-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='submit'>Add Patient</button>
                     </form>
