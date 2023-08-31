@@ -32,7 +32,7 @@ const PatientsPage = () => {
         <div key={patients.id} className="md:flex">
           <div className="p-8">
             <div className="uppercase tracking-wide text-sm text-sky-600 font-bold">Patient</div>
-            <a href="#" className="block mt-1 text-lg leading-tight font-medium font-semibold text-black hover:underline">{patients.name}</a>
+            <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{patients.name}</a>
             <p className="mt-2 font-semibold text-cyan-500"> A.N : {patients.num_afi}</p>
             <p className="mt-2 font-semibold text-cyan-500"> Age : {patients.age}</p>
             <p className="mt-2 font-semibold text-cyan-500">Address : {patients.address}</p>
